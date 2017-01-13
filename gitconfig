@@ -1,0 +1,6 @@
+[user]
+	name = Shota IDE
+	email = ide.shota.dev@gmail.com
+[core]
+	editor = emacs
+	excludesfile = ~/.gitignore
