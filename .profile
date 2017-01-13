@@ -1,6 +1,4 @@
-alias emacs='/Applications/Emacs.app/Contents/MacOS/Emacs'
-
-# apache/mysql起動 再起動
+# apache/mysql start and stop
 function web(){
 case $1 in
     "start" )
@@ -39,14 +37,12 @@ case $1 in
 esac
 }
 
-#export PATH="$HOME/.pyenv/shims:$PATH"
+# Python
+export PYENV_ROOT=$HOME/.pyenv
+export PATH=$PYENV_ROOT/bin:$PATH
+eval "$(pyenv init -)"
 
 # Ruby
 export RBENV_ROOT=$HOME/.rbenv
 export PATH=$RBENV/bin:$PATH
 eval "$(rbenv init -)"
-
-# Python
-export PYENV_ROOT=$HOME/.pyenv
-export PATH=$PYENV_ROOT/bin:$PATH
-eval "$(pyenv init -)"
