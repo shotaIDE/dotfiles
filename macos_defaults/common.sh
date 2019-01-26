@@ -12,3 +12,9 @@ defaults write com.apple.finder AppleShowAllFiles -int 1
 
 # Restart Finder
 killall Finder
+
+# Disable screen shot shadow
+defaults write com.apple.screencapture disable-shadow -boolean true
+
+# Restart system ui server
+killall SystemUIServer
