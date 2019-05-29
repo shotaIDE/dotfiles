@@ -10,6 +10,9 @@ killall Dock
 # Show dot files in Finder
 defaults write com.apple.finder AppleShowAllFiles -int 1
 
+# Don't make .DS_Store file on network
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -int 1
+
 # Restart Finder
 killall Finder
 
