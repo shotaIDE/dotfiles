@@ -18,3 +18,6 @@ defaults write com.apple.screencapture disable-shadow -int 1
 
 # Restart system ui server
 killall SystemUIServer
+
+# XCode
+defaults write com.apple.dt.Xcode DVTTextShowInvisibleCharacters -int 1
