@@ -1,10 +1,10 @@
 # Yen key sends backslash
 defaults write com.apple.inputmethod.Kotoeri JIMPrefCharacterForYenKey -int 1
 
-# Auto hide Dock
+# Dock
 defaults write com.apple.dock autohide -int 1
+defaults write com.apple.dock show-recents -int 0
 
-# Restart Dock
 killall Dock
 
 # Show dot files in Finder
