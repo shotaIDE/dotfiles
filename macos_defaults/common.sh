@@ -19,6 +19,9 @@ killall Finder
 # Display date
 defaults write com.apple.menuextra.clock 'DateFormat' -string "M\\U6708d\\U65e5(EEE)  H:mm"
 
+# Show the battery percentage
+defaults write com.apple.menuextra.battery ShowPercent -int 1
+
 # Disable screen shot shadow
 defaults write com.apple.screencapture disable-shadow -int 1
 
